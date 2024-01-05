@@ -27,10 +27,10 @@ class HousingException(Exception):
         error message: [{error_message}]
         """
         return error_message
-
+    """ returns object as string so that it is visible and readable. How it looks when it is printed"""
     def __str__(self):
         return self.error_message
 
-
+    """representation of object.Without print(), how it looks"""
     def __repr__(self) -> str:
         return HousingException.__name__.str()
